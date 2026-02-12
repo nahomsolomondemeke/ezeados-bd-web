@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#1e3c72">
+    <title>Ezexo's Birthday Website - Our Friendship Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Dynamic Background Watermark -->
+    <div id="backgroundWatermark"></div>
+    
+    <!-- "NA ZI" Text Watermark -->
+    <div id="textWatermark">NA ZI</div>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="main-title">Ezexo's Birthday Website</h1>
+            <p class="subtitle">Our Friendship Journey</p>
+            <button class="reveal-all-btn" onclick="revealAll()"> Reveal Everything</button>
+            <div class="birthday-date">On your special day -February 12th</div>
+        </header>
+
+        <!-- Photo Gallery Section -->
+        <section class="photo-gallery">
+            <h2 class="section-title">Nazi's Journey Together</h2>
+            <div id="categoriesContainer" class="categories-container">
+                <!-- Categories will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Letters Section -->
+        <section class="letters-section">
+            <h2 class="section-title">A birthday letter...</h2>
+            <div id="lettersButtons" class="letters-buttons">
+                <!-- Letter buttons will be dynamically loaded here -->
+            </div>
+            <div id="letterContent" class="letter-content hidden">
+                <!-- Letter content will be displayed here -->
+            </div>
+        </section>
+
+        <!-- Music Playlist Section -->
+        <section class="music-playlist-section">
+            <h2 class="section-title">Favorite Playlist</h2>
+            <div id="playlistContainer" class="playlist-container">
+                <!-- Playlist will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">Made with brotherly love for you 🤝</p>
+            <p class="footer-date">Created for your special day</p>
+        </footer>
+    </div>
+
+    <!-- Media Popup/Lightbox -->
+    <div id="mediaPopup" class="media-popup">
+        <div class="popup-content">
+            <button class="popup-close">&times;</button>
+            <div class="popup-media-container">
+                <!-- Media will be dynamically loaded here -->
+            </div>
+            <div class="popup-caption">
+                <!-- Caption will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="content.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
